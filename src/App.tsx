@@ -1,10 +1,15 @@
-import "./styles.css";
+import * as React from "react";
+import { AppContainer } from "./styles";
 
-export default function App() {
+const App= () => {
+  console.log(typeof children);
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <AppContainer>
+      <p>{JSON.stringify(typeof children)}</p>
+      Columns here t
+      {/* {children} */}
+    </AppContainer>
   );
-}
+};
+
+export default App;
